@@ -1,0 +1,119 @@
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+ #map {
+  margin: auto;
+  height: 65%;
+  width: 45%;
+  left: 0;
+
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #ffff99;
+}
+
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 )
+                url('http://i.stack.imgur.com/FhHRx.gif')
+                50% 50%
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
+
+/*/////Wifi Details display/////*/
+#details {
+  text-align: center;
+  margin: auto;
+  display: block;
+  background-color: white;
+  border-radius: 20px;
+  width: 500px;
+}
+
+#zipform {
+  /*margin: auto;*/
+  display: block;
+}
+
+#zipcode label {
+/*margin: 25px;*/
+}
+
+#zip {
+
+  background-color: #cceeff;
+  font-size: 20px;
+}
+.container{
+  text-align: center;
+}
+#button{
+  background-color: #ffcccc;
+
+  font-style: italic;
+  font-size: 20px;
+}
+
+/*/////Image Logo/////*/
+#wifinder {
+  margin: auto;
+  margin-top: 25px;
+  height: 150px;
+  display: block;
+}
+
+.page-header {
+  margin: auto;
+}
+
+/*/////Loading/////*/
+#loading {
+  height: 100%;
+  width: 100%;
+  background-color: #1C1C1C;
+}
+
+#loading img {
+  margin-top: 20%;
+  margin-left: 38%;
+  z-index: 100;
+}
+
+/*/////Hidden/////*/
+#hidden {
+  height: 100%;
+  width: 100%;
+}
+#wrapper {
+  position: flex;
+}
