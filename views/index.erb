@@ -16,11 +16,6 @@
       crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-      <!-- Google Maps API -->
-
-      <!-- <script
-        src="https://maps.googleapis.com/maps/api/js?key=#">
-      </script> -->
 
     <!-- All the JS -->
     <script type="text/javascript" src="js/wrappers/api.js"></script>
@@ -31,7 +26,10 @@
     <script type="text/javascript" src="js/app.js"></script>
   </head>
   <body>
+
+    <!-- Google Maps API -->
     <%= "<script src='https://maps.googleapis.com/maps/api/js?key=#{ENV['API_KEY']}'></script>" %>
+    
     <div id="loading">
       <div id="gif">
         <img src="images/loading.gif" alt=""/>
